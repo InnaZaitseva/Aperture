@@ -67,9 +67,29 @@ main section {
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 71px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    position: relative;
 }
 
+.fixed_location {
+    position: absolute;
+    right: 40px;
+    bottom: 46px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    }
+
+.fixed_location li{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    margin-left: 16px;
+
+}
 main section div {
     max-width: 580px;
     text-align: center;
@@ -93,3 +113,4 @@ main section div {
     text-align: center;
     color: #C0C0C0;"
 }
+
