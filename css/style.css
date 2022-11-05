@@ -138,3 +138,37 @@ main section div {
     color: #C0C0C0;"
 }
 
+.sunset{
+    background-image: url("../images/IMAGE.jpg");
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.sunset .sub_container {
+    max-width: 298px;
+    margin-right: 62px;
+}
+
+.sunset h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.sunset{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
