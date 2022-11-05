@@ -88,8 +88,32 @@ main section {
     line-height: 12px;
     color: #FFFFFF;
     margin-left: 16px;
-
+    display: flex;
+    align-items: center;
 }
+.fixed_location li:before{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/camera.svg);
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.fixed_location li:nth-child(2):before{
+    background-image: url("../images/time.svg");
+}
+
+.fixed_location li:nth-child(3):before{
+    background-image: url("../images/iso.svg");
+    width: 32px;
+}
+
+.fixed_location li:last-of-type:before{
+    background-image: url("../images/location_ice.svg");
+    width: 10px;
+}
+
 main section div {
     max-width: 580px;
     text-align: center;
