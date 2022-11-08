@@ -15,8 +15,8 @@ header{
 .d_flex {
     display: flex;
     justify-content: space-between;
-    align-items: center
-}
+    align-items: center;
+   }
 
 #navbar{
     list-style: none; display: flex;
@@ -59,7 +59,7 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
 
 }
 
-main section {
+.main_section {
     background-image: url('../images/background_main.jpg');
     background-size: cover;
     height: 100vh;
@@ -81,11 +81,9 @@ main section {
     }
 
 .fixed_location li{
-    font-family: 'Poppins';
+    font: 12px/12px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
     color: #FFFFFF;
     margin-left: 16px;
     display: flex;
@@ -114,25 +112,23 @@ main section {
     width: 10px;
 }
 
-main section div {
+.main_section div {
     max-width: 580px;
     text-align: center;
     color: #FFFFFF;
 }
-.main_section_header2 {
+.main_section h2 {
     font: 14px/20px 'Poppins', sans-serif;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
-.main_section_header1{
+.main_section h1{
     font: 54px/59px 'Poppins', sans-serif;
     text-align: center;
     color: #FFFFFF;"
 }
-
-.main_section_text {
+.main_section p {
     font: 14px/20px 'Poppins', sans-serif;
     text-align: center;
     color: #C0C0C0;"
@@ -147,37 +143,81 @@ main section div {
     justify-content: right;
     align-items: center;
 }
-.sunset .sub_container {
+.sunset .sub_container, .leafs .sub_container, .star_fall .sub_container {
     max-width: 298px;
     margin-right: 62px;
 }
+/*індивідуалізувати суб контейнери!*/
 
-.sunset h4, .leafs h4{
-    font-family: 'Poppins';
+.sunset h4, .leafs h4, .star_fall h4 {
+    font: 14px/20px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.sunset {
-    font-family: 'Poppins';
+.sunset, .leafs, .star_fall {
+    font: 14px/20px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
     color: #C0C0C0;
 }
 
-.leafs{
-    background-image: url("../images/");
+.leafs {
+    background-image: url("../images/IMAGE_bcg_Leaves.jpg");
     background-size: cover;
     min-height: 600px;
     position: relative;
     display: flex;
     justify-content: right;
     align-items: center;
+}
+
+.past_clients {
+    background-color: black;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+    /*align-items: flex-end;*/
+    /*position: relative;*/
+}
+
+.past_clients h2{
+    font: 40px/42px 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+.past_clients p {
+    font: 24px/30px 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #C0C0C0;
+    padding-bottom: 82px;
+}
+
+.past_clients div img {
+    max-width: 128px;
+}
+
+
+.star_fall {
+    background-image: url("../images/IMAGE_bcg_star_fall.jpg");
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
 
