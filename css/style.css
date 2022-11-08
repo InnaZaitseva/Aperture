@@ -152,7 +152,7 @@ main section div {
     margin-right: 62px;
 }
 
-.sunset h4{
+.sunset h4, .leafs h4{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -163,7 +163,7 @@ main section div {
     color: #FFFFFF;
 }
 
-.sunset{
+.sunset {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -171,4 +171,13 @@ main section div {
     line-height: 20px;
     color: #C0C0C0;
 }
+
+.leafs{
+    background-image: url("../images/");
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 
