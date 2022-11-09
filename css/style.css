@@ -216,7 +216,7 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     background-color: black;
     min-height: 414px;
     box-sizing: border-box;
-    align-items: center;
+    text-align: center;
     display: flex;
 }
 
@@ -224,7 +224,6 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     font: 24px/30px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    text-align: center;
     color: #C0C0C0;
     padding-bottom: 22px;
 }
