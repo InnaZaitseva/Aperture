@@ -16,7 +16,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   }
+}
 
 #navbar{
     list-style: none; display: flex;
@@ -34,7 +34,6 @@ header nav li{
     color: #FFFFFF;
     text-decoration: none;
 }
-/*спроба 1 псевдоелементи*/
 
 header li .navbar_item:first-of-type a{
     font-size: 13px;
@@ -147,7 +146,6 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     max-width: 298px;
     margin-right: 62px;
 }
-/*індивідуалізувати суб контейнери!*/
 
 .sunset h4, .leafs h4, .star_fall h4 {
     font: 14px/20px 'Poppins', sans-serif;
@@ -177,25 +175,21 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
 
 .past_clients {
     background-color: black;
-    background-size: cover;
     min-height: 500px;
-    display: flex;
-    justify-content: center;
     box-sizing: border-box;
-
-    /*align-items: flex-end;*/
-    /*position: relative;*/
 }
 
-.past_clients h2{
+.past_clients h2, .help h2{
     font: 40px/42px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     text-align: center;
     color: #FFFFFF;
     padding-bottom: 15px;
+    padding-top: 120px;
 }
-.past_clients p {
+
+.past_clients p, .help p {
     font: 24px/30px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -204,10 +198,9 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     padding-bottom: 82px;
 }
 
-.past_clients div img {
+.past_clients a {
     max-width: 128px;
 }
-
 
 .star_fall {
     background-image: url("../images/IMAGE_bcg_star_fall.jpg");
@@ -219,5 +212,48 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     align-items: center;
 }
 
+.help {
+    background-color: black;
+    min-height: 414px;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+}
+
+.help p {
+    font: 24px/30px 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #C0C0C0;
+    padding-bottom: 22px;
+}
+
+.help a{
+    font: 16px/20px 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: #000000;
+    width: 154px;
+    height: 42px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 14px;
+    margin-bottom: 108px;
+}
+
+.help a:before{
+    content: "";
+    display: inline-block;
+    background-color: black;
+    width: 32px;
+    height: 32px;
+    border-radius: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
 
 
