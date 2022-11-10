@@ -177,6 +177,8 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     background-color: black;
     min-height: 500px;
     box-sizing: border-box;
+    padding-top: 113px;
+    padding-bottom: 140px;
 }
 
 .past_clients h2, .help h2{
@@ -186,7 +188,6 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     text-align: center;
     color: #FFFFFF;
     padding-bottom: 15px;
-    padding-top: 120px;
 }
 
 .past_clients p, .help p {
@@ -214,10 +215,16 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
 
 .help {
     background-color: black;
-    min-height: 414px;
     box-sizing: border-box;
     text-align: center;
     display: flex;
+    padding-top: 113px;
+    padding-bottom: 108px;
+}
+
+.help div{
+    max-width:571px;
+    margin: auto;
 }
 
 .help p {
@@ -234,14 +241,13 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     font-weight: 400;
     letter-spacing: 0.4px;
     color: #000000;
-    width: 154px;
     height: 42px;
     text-decoration: none;
     align-items: center;
-    display: flex;
+    display: inline-flex;
     background: #FFFFFF;
     border-radius: 14px;
-    margin-bottom: 108px;
+    padding-right: 10px;
 }
 
 .help a:before{
