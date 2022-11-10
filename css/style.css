@@ -179,7 +179,7 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     box-sizing: border-box;
     padding-top: 113px;
     padding-bottom: 140px;
-}
+  }
 
 .past_clients h2, .help h2{
     font: 40px/42px 'Poppins', sans-serif;
@@ -201,6 +201,8 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
 
 .past_clients a {
     max-width: 128px;
+    display: inline-block;
+    align-items: center;
 }
 
 .star_fall {
@@ -261,4 +263,12 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     margin-left: 5px;
 }
 
+.owl-stage{
+    display: flex;
+    align-items: center;
+}
+
+.owl-item{
+    text-align: center;
+}
 
