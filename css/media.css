@@ -1,12 +1,41 @@
-@media screen and (max-width: 360px) {
-
-}
 @media screen and (max-width: 428px) {
-    #navbar{
-        height: calc(65vh-)
+    .d_flex {
+        justify-content: space-around;}
+}
+    .navbar {
+        height: calc(18vh);
+        flex-direction: column;
+        font-size: 9px;
+    }
+    .navbar_sets_button {
+        font: 8px/16px 'Poppins', sans-serif;
+        padding: 6px 8px 8px 6px;
+        margin-left: -7px;
     }
 
-}
+
 @media screen and (max-width: 768px) {
 
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 834px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+    .header div {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .header{
+        background-color: red;
+    }
 }
