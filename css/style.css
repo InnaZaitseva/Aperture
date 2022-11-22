@@ -20,7 +20,7 @@ header{
 .flex-wrap{
     flex-wrap: wrap;
     margin: auto;
- }
+}
 
 .navbar{
     list-style: none;
@@ -144,27 +144,26 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     max-width: 1168px;
 }
 .what_we_do h3{
-    margin-bottom: 15px;
     font: 40px/42px 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
-    /*    додала з фігми властивості!!!!!*/
+    margin-bottom: 15px;
 }
 .what_we_do h4{
-    margin-bottom: 42px;
     font: 23px/30px 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: center;
     color: #C0C0C0;
+    margin-bottom: 42px;
 }
 .what_we_do article{
     max-width: 576px;
     display: inline-block;
     position: relative;
-}
+  }
 .what_we_do article img{
     width: 100%;
 }
@@ -190,7 +189,6 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     color: #C0C0C0;
     margin-bottom: 15px;
 }
-
 .description a{
     font: 15px/20px 'Poppins', sans-serif;
     font-style: normal;
@@ -205,18 +203,6 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     border-radius: 14px;
     padding-right: 10px;
 }
-
-.description a:before {
-    content: "";
-    display: inline-block;
-    background-color: black;
-    width: 32px;
-    height: 32px;
-    border-radius: 14px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
 .sunset{
     background-image: url("../images/IMAGE.jpg");
     background-size: cover;
@@ -230,7 +216,6 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     max-width: 298px;
     margin-right: 62px;
 }
-
 .sunset h4, .leafs h4, .star_fall h4 {
     font: 14px/20px 'Poppins', sans-serif;
     font-style: normal;
@@ -239,12 +224,34 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
 .sunset, .leafs, .star_fall {
     font: 14px/20px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     color: #C0C0C0;
+}
+
+.tools{
+    background-color: black;
+    min-height: 540px;
+    position: relative;
+}
+.tools .position_bg{
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-image: url("../images/bg_r.jpg");
+    background-size: cover;
+    position: absolute;
+}
+.tools .item{
+    max-width: 514px;
+}
+.tools .container{
+    display: flex;
+    align-items: center;
+    min-height: 540px;
 }
 
 .leafs {
@@ -256,7 +263,6 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     justify-content: right;
     align-items: center;
 }
-
 .past_clients {
     background-color: black;
     min-height: 500px;
@@ -264,7 +270,6 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     padding-top: 113px;
     padding-bottom: 140px;
   }
-
 .past_clients h2, .help h2{
     font: 40px/42px 'Poppins', sans-serif;
     font-style: normal;
@@ -273,7 +278,6 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     color: #FFFFFF;
     padding-bottom: 15px;
 }
-
 .past_clients p, .help p {
     font: 24px/30px 'Poppins', sans-serif;
     font-style: normal;
@@ -336,7 +340,7 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     padding-right: 10px;
 }
 
-.help a:before {
+.help a:before, .description a:before {
     content: "";
     display: inline-block;
     background-color: black;
