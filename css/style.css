@@ -161,11 +161,12 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
 }
 .what_we_do article{
     max-width: 576px;
-    display: inline-block;
     position: relative;
+    margin-bottom: 16px;
   }
 .what_we_do article img{
     width: 100%;
+    display: block;
 }
 .what_we_do article .description{
     position: absolute;
@@ -238,10 +239,10 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
 }
 .tools .position_bg{
     width: 50%;
-    height: 100%;
+    height: 540px;
     right: 0;
     top: 0;
-    background-image: url("../images/bg_r.jpg");
+    background-image: url("../images/img_tools.jpg");
     background-size: cover;
     position: absolute;
 }
@@ -252,6 +253,28 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     display: flex;
     align-items: center;
     min-height: 540px;
+}
+.tools .item h4 {
+    font:  400 14px/20px 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 6px;
+    color: #C0C0C0;
+    text-transform: uppercase;
+}
+.tools .item h3{
+    font: 400 28px/32px 'Poppins', sans-serif;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-bottom: 14px;
+}
+.tools .item p{
+    font: 400 14px/20px 'Poppins', sans-serif;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
 }
 
 .leafs {
@@ -325,7 +348,7 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     padding-bottom: 22px;
 }
 
-.help a {
+.help a, .tools .item a {
     font: 16px/20px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -340,7 +363,7 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     padding-right: 10px;
 }
 
-.help a:before, .description a:before {
+.help a:before, .description a:before, .tools .item a:before {
     content: "";
     display: inline-block;
     background-color: black;
