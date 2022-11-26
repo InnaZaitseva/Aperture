@@ -248,7 +248,7 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
 }
 .tools .item{
     max-width: 514px;
-}
+    }
 .tools .container{
     display: flex;
     align-items: center;
@@ -448,10 +448,8 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
 }
 
 .faq .text h3{
-    font-family: 'Poppins', sans-serif;
-    font-size: 41px;
+    font:41px/50px 'Poppins', sans-serif;
     font-weight: 400;
-    line-height: 50px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #C0C0C0;
@@ -480,7 +478,7 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     margin-bottom: 0;
     border-radius: 8px 8px 0 0;
 }
-.ui-accordion ui-accordion-content{
+.ui-accordion .ui-accordion-content{
     margin-bottom: 16px;
     border-radius: 0 0 8px 8px;
 }
@@ -489,7 +487,7 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     background-position: 0;
     width: 32px;
     height: 48px;
-    text-indent: 0px;
+    text-indent: 0;
     position: absolute;
     right: 25px;
     top: 26px;
