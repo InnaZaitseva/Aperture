@@ -408,6 +408,22 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     right: 17px;
     top: 23px;
 }
+/*ЗРАЗОК ВЛАСТИВОСТІ owl-dots - оформлення крапок (варіант для мобільноі версіі більше - see below)*/
+.owl-dots{
+    text-align: center;
+}
+.owl-dots .owl-dot span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: red;
+    border-radius: 50%;
+}
+.owl-dots .owl-dot.active span{
+    background-color: #5397c7;
+}
+
 
 .faq{
     background-color: #181818;
