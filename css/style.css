@@ -382,6 +382,32 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
 .owl-item{
     text-align: center;
 }
+/*.owl-nav{*/
+/*    display:*/
+/*}*/
+.owl-nav .owl-prev:before{
+    font-weight:900;
+    font-family: "Font Awesome 6 Free";
+    content: "\f053";
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    left: 17px;
+    top: 23px;
+}
+
+.owl-nav .owl-next:before {
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    content: "\f054";
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    right: 17px;
+    top: 23px;
+}
 
 .faq{
     background-color: #181818;
@@ -416,11 +442,9 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     margin-bottom: 50px;
 }
 .faq .text p{
-    font-family: 'Poppins', sans-serif;
+    font:12px/12px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
     color: #FFFFFF;
 }
 
@@ -430,25 +454,20 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     padding: 23px 25px;
-    font-family: 'Poppins', sans-serif;
+    font: 18px/27px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
     color: #202939;
     margin-bottom: 16px;
 }
-
 .faq .ui-accordion .ui-accordion-header.ui-state-active{
     margin-bottom: 0;
     border-radius: 8px 8px 0 0;
 }
-
 .ui-accordion ui-accordion-content{
     margin-bottom: 16px;
     border-radius: 0 0 8px 8px;
 }
-
 .faq .ui-accordion .ui-icon{
     background-image: none;
     background-position: 0;
