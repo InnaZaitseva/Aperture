@@ -546,7 +546,6 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     float: right;
     height: 45px;
     width: 45px;
-        /* replace text with background image */
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -599,6 +598,11 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     -o-transform: translateY(-8px) rotate(45deg);
     transform: translateY(-8px) rotate(45deg); }
 
+@media only screen and (min-width: 768px) {
+    .cd-3d-nav-trigger {
+        display: inline-block;
+    }
+}
 .cd-3d-nav-container {
     /* this is the 3D navigation container */
     position: fixed;
