@@ -103,6 +103,10 @@
     .d_flex {
         justify-content: space-around;
     }
+    .cd-3d-nav-trigger {
+        display: inline-block;
+    }
+
     .navbar {
         height: 15vh;
         font-size: 14px;
