@@ -4,10 +4,51 @@
     }
 }
 
-@media screen and (max-width: 428px) {
-    .d_flex {
-        justify-content: space-around;
+@media screen and (max-width: 834px) {
+    .fixed_location {
+        right: 15px;
+        bottom: 15px;
+        align-items: flex-end;}
+
+    .tools{
+        padding-left: 10px;
     }
+    .tools .item {
+        max-width:400px;}
+}
+    .faq {
+     padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        height: 15vh;
+        font-size: 14px;
+        align-items: center;
+    }
+    .navbar_sets_button {
+        font: 13px/16px 'Poppins', sans-serif;
+        padding: 6px 8px 8px 6px;
+        margin-left: -7px;
+    }
+    .fixed_location {
+        right: 15px;
+        bottom: 15px;
+        align-items: flex-end;
+    }
+    .what_we_do .container {
+        max-width: 580px;
+    }
+    .tools .item {
+        max-width:370px;}
+
+    .tools .item p{
+        font: 400 10px/16px 'Poppins', sans-serif;
+    }
+}
+@media screen and (max-width: 428px) {
+
     .navbar {
         height: 18vh;
         flex-direction: column;
@@ -49,15 +90,14 @@
         font: 10px/16px 'Poppins', sans-serif;
     }
     .tools .item{
-        width: calc(100vh - 40px);
-    }
+        max-width: 180px;
+       }
     .tools .item h3{
         font: 16px/20px 'Poppins', sans-serif;
     }
     .tools .item p{
         font: 12px/15px 'Poppins', sans-serif;
     }
-
     .past_clients {
         padding-top: 60px;
         padding-bottom: 20px;
@@ -76,7 +116,6 @@
     .help a{
         font: 12px/16px 'Poppins', sans-serif;
     }
-
     .faq{
         background-color: #181818;
         padding: 45px 0;
@@ -96,33 +135,6 @@
     .faq .text h3 {
         font: 20px/22px 'Poppins', sans-serif;
         margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .d_flex {
-        justify-content: space-around;
-    }
-    .navbar {
-        height: 15vh;
-        font-size: 14px;
-        align-items: center;
-    }
-    .navbar_sets_button {
-        font: 13px/16px 'Poppins', sans-serif;
-        padding: 6px 8px 8px 6px;
-        margin-left: -7px;
-    }
-    .fixed_location {
-        right: 15px;
-        bottom: 15px;
-        align-items: flex-end;
-    }
-    .tools .item p{
-        font: 400 10px/16px 'Poppins', sans-serif;}
-
-    .faq .accordion{
-        padding-right: 10px;
     }
 }
 

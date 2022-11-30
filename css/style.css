@@ -49,37 +49,37 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     font-size: 15px;
 }
 
-.navbar_sets_button {
-    font: 16px/20px 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #000000;
-    text-decoration: none;
-    background: #FFFFFF;
-    border-radius: 14px;
-    padding: 9px 20px 13px 20px
-}
+/*.navbar_sets_button {*/
+/*    font: 16px/20px 'Poppins', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    color: #000000;*/
+/*    text-decoration: none;*/
+/*    background: #FFFFFF;*/
+/*    border-radius: 14px;*/
+/*    padding: 9px 20px 13px 20px*/
+/*}*/
 
-.main_section {
-    background-image: url('../images/background_main.jpg');
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 71px;
-    box-sizing: border-box;
-    position: relative;
-}
+/*.main_section {*/
+/*    background-image: url('../images/background_main.jpg');*/
+/*    background-size: cover;*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: flex-end;*/
+/*    padding-bottom: 71px;*/
+/*    box-sizing: border-box;*/
+/*    position: relative;*/
+/*}*/
 
-.fixed_location {
-    position: absolute;
-    right: 40px;
-    bottom: 46px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    }
+/*.fixed_location {*/
+/*    position: absolute;*/
+/*    right: 40px;*/
+/*    bottom: 46px;*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    }*/
 
 .fixed_location li{
     font: 12px/12px 'Poppins', sans-serif;
@@ -550,7 +550,8 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     text-indent: 100%;
     white-space: nowrap;
     color: transparent;
-    display: none;}
+    display: inline-block;
+    }
 .cd-3d-nav-trigger span,
 .cd-3d-nav-trigger span::before,
 .cd-3d-nav-trigger span::after {
@@ -600,13 +601,13 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
 
 @media only screen and (min-width: 768px) {
     .cd-3d-nav-trigger {
-        display: inline-block;
+        display: none;
     }
 }
 .cd-3d-nav-container {
     /* this is the 3D navigation container */
     position: fixed;
-    top: 1px;
+    top: -79px;
     left: 0;
     height: 80px;
     width: 100%;
