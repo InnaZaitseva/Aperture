@@ -1,7 +1,7 @@
-@media screen and (min-width: 360px) {
-    .sunset .sub_container, .leafs .sub_container, .star_fall .sub_container {
-       margin-left: 15px;
-    }
+@media screen and (max-width: 360px) {
+   .tools .item{
+    margin-left: -20px;
+   }
 }
 
 @media screen and (max-width: 834px) {
@@ -17,7 +17,7 @@
         padding-left: 10px;
     }
     .tools .item {
-        max-width:400px;}
+        max-width:375px;}
 }
     .faq {
      padding: 10px;
@@ -215,17 +215,15 @@
         -moz-transition: opacity 0.5s 0s, visibility 0s 0.5s;
         transition: opacity 0.5s 0s, visibility 0s 0.5s; }
     .nav_button{
-        padding: 0px 20px 0px 20px;}
+        padding: 0;}
     .cd-marker{
         height: 3px;
     }
-
     .fixed_location {
         right: 15px;
         bottom: 15px;
         align-items: flex-end;
     }
-
     .tools .item {
         max-width:370px;}
     .tools .item p{

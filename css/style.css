@@ -511,7 +511,7 @@ header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth
     color: #FFFFFF;
     text-decoration: none;
 }
-.nav_button  {
+.cd-3d-nav .nav_button  {
     font: 16px/20px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
