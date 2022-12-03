@@ -1,0 +1,12 @@
+qwerty{
+  padding: 0;
+  display: flex;
+}
+$main_font:'Poppins', sans-serif;
+$main_color:#000000;
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}

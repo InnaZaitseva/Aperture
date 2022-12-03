@@ -1,45 +1,50 @@
-.navbar_sets_button {
-  font: 16px/20px "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #000000;
-  text-decoration: none;
-  background: #FFFFFF;
-  border-radius: 14px;
-  padding: 9px 20px 13px 20px; }
+/*
+Error: Invalid CSS after "...ocation_ice.svg": expected "{", was "");"
+        on line 89 of preproc.scss
 
-.main_section {
-  background-image: url("../images/background_main.jpg");
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 71px;
-  box-sizing: border-box;
-  position: relative; }
+84: //          width:32px;
+85: //        }
+86: //      }
+87: //      &:last-of-type{
+88: //        &:before{
+89: //          background-image: url("../images/location_ice.svg");
+90: //          width: 10px;
+91: //        }
+92: //      }
+93: //    }
+94: //  }
 
-.fixed_location {
-  position: absolute;
-  right: 40px;
-  bottom: 46px;
-  list-style: none;
-  display: flex;
-  align-items: center; }
-  .fixed_location li {
-    font: 12px/12px 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #FFFFFF;
-    margin-left: 16px;
-    display: flex;
-    align-items: center; }
-    .fixed_location li:before {
-      content: "";
-      display: inline-block;
-      background-image: url(../images/camera.svg);
-      width: 16px;
-      height: 16px;
-      margin-right: 6px; }
-
-/*# sourceMappingURL=preproc.css.map */
+Backtrace:
+preproc.scss:89
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+C:/Ruby31-x64/bin/sass:32:in `load'
+C:/Ruby31-x64/bin/sass:32:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ocation_ice.svg\": expected \"{\", was \"\");\"\A         on line 89 of preproc.scss\A \A 84: //          width:32px;\A 85: //        }\A 86: //      }\A 87: //      &:last-of-type{\A 88: //        &:before{\A 89: //          background-image: url(\"../images/location_ice.svg\");\A 90: //          width: 10px;\A 91: //        }\A 92: //      }\A 93: //    }\A 94: //  }"; }

@@ -26,26 +26,26 @@ header{
 }
 
 
-/*.main_section {*/
-/*    background-image: url('../images/background_main.jpg');*/
-/*    background-size: cover;*/
-/*    height: 100vh;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: flex-end;*/
-/*    padding-bottom: 71px;*/
-/*    box-sizing: border-box;*/
-/*    position: relative;*/
-/*}*/
+.main_section {
+    background-image: url('../images/background_main.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 71px;
+    box-sizing: border-box;
+    position: relative;
+}
 
-/*.fixed_location {*/
-/*    position: absolute;*/
-/*    right: 40px;*/
-/*    bottom: 46px;*/
-/*    list-style: none;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    }*/
+.fixed_location {
+    position: absolute;
+    right: 40px;
+    bottom: 46px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    }
 
 .fixed_location li{
     font: 12px/12px 'Poppins', sans-serif;
@@ -76,27 +76,27 @@ header{
     width: 10px;
 }
 
-.main_section div {
-    max-width: 580px;
-    text-align: center;
-    color: #FFFFFF;
-}
-.main_section h2 {
-    font: 14px/20px 'Poppins', sans-serif;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.main_section h1{
-    font: 54px/59px 'Poppins', sans-serif;
-    text-align: center;
-    color: #FFFFFF;"
-}
-.main_section p {
-    font: 14px/20px 'Poppins', sans-serif;
-    text-align: center;
-    color: #C0C0C0;"
-}
+/*.main_section div {*/
+/*    max-width: 580px;*/
+/*    text-align: center;*/
+/*    color: #FFFFFF;*/
+/*}*/
+/*.main_section h2 {*/
+/*    font: 14px/20px 'Poppins', sans-serif;*/
+/*    text-align: center;*/
+/*    letter-spacing: 2px;*/
+/*    text-transform: uppercase;*/
+/*}*/
+/*.main_section h1{*/
+/*    font: 54px/59px 'Poppins', sans-serif;*/
+/*    text-align: center;*/
+/*    color: #FFFFFF;"*/
+/*}*/
+/*.main_section p {*/
+/*    font: 14px/20px 'Poppins', sans-serif;*/
+/*    text-align: center;*/
+/*    color: #C0C0C0;"*/
+/*}*/
 
 .what_we_do {
     background-color:#000000;

@@ -1,5 +1,4 @@
 
-
 $main_font:'Poppins', sans-serif;
 $main_color:#000000;
 
@@ -9,51 +8,88 @@ $main_color:#000000;
   }
 }
 
-.navbar_sets_button {
-  font: 16px/20px $main_font;
-  font-style: normal;
-  font-weight: 400;
-  color: #000000;
-  text-decoration: none;
-  background: #FFFFFF;
-  border-radius: 14px;
-  padding: 9px 20px 13px 20px
-}
-
-.main_section {
-  background-image: url('../images/background_main.jpg');
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 71px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.fixed_location {
-  position: absolute;
-  right: 40px;
-  bottom: 46px;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  li {
-    font: 12px/12px 'Poppins', sans-serif;
+  .nav_button {
+    font: 16px/20px $main_font;
     font-style: normal;
     font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 9px 20px 13px 20px
+  }
+
+//.main_section {
+//  background-image: url("../images/background_main.jpg");
+//  background-size: cover;
+//  height: 100vh;
+//  display: flex;
+//  justify-content: center;
+//  align-items: flex-end;
+//  padding-bottom: 71px;
+//  box-sizing: border-box;
+//  position: relative;
+  div{
+    max-width: 580px;
+    text-align: center;
     color: #FFFFFF;
-    margin-left: 16px;
-    display: flex;
-    align-items: center;
-    &:before {
-      content: "";
-      display: inline-block;
-      background-image: url(../images/camera.svg);
-      width: 16px;
-      height: 16px;
-      margin-right: 6px;
+    h2 {
+      font: 14px/20px 'Poppins', sans-serif;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    h1{
+      font: 54px/59px 'Poppins', sans-serif;
+      text-align: center;
+      color: #FFFFFF;"
+    }
+    p {
+      font: 14px/20px 'Poppins', sans-serif;
+      text-align: center;
+      color: #C0C0C0;
     }
   }
-}
+//  .fixed_location {
+//  position: absolute;
+//  right: 40px;
+//  bottom: 46px;
+//  list-style: none;
+//  display: flex;
+//  align-items: center;
+//    li {
+//      font: 12px/12px 'Poppins', sans-serif;
+//      font-style: normal;
+//      font-weight: 400;
+//      color: #FFFFFF;
+//      margin-left: 16px;
+//      display: flex;
+//      align-items: center;
+//      &:before {
+//        content: "";
+//        display: inline-block;
+//        background-image: url("../images/camera.svg");
+//        width: 16px;
+//        height: 16px;
+//        margin-right: 6px;
+//      }
+//      &:nth-child(2) {
+//        &:before {
+//          background-image: url("../images/time.svg");
+//        }
+//      }
+//      &:nth-child(3){
+//        &:before{
+//          background-image: url("../images/iso.svg");
+//          width:32px;
+//        }
+//      }
+//      &:last-of-type{
+//        &:before{
+//          background-image: url("../images/location_ice.svg");
+//          width: 10px;
+//        }
+//      }
+//    }
+//  }
+//}
