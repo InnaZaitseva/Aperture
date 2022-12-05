@@ -195,60 +195,60 @@ header{
     color: #C0C0C0;
 }
 
-.tools{
-    background-color: black;
-    min-height: 540px;
-    position: relative;
-}
-.tools .position_bg{
-    width: 50%;
-    height: 540px;
-    right: 0;
-    top: 0;
-    background-image: url("../images/img_tools.jpg");
-    background-size: cover;
-    position: absolute;
-}
-.tools .item{
-    max-width: 514px;
-    }
-.tools .container{
-    display: flex;
-    align-items: center;
-    min-height: 540px;
-}
-.tools .item h4 {
-    font:  400 14px/20px 'Poppins', sans-serif;
-    letter-spacing: 2px;
-    text-align: left;
-    margin-bottom: 6px;
-    color: #C0C0C0;
-    text-transform: uppercase;
-}
-.tools .item h3{
-    font: 400 28px/32px 'Poppins', sans-serif;
-    letter-spacing: 0em;
-    text-align: left;
-    color: white;
-    margin-bottom: 14px;
-}
-.tools .item p{
-    font: 400 14px/20px 'Poppins', sans-serif;
-    letter-spacing: 0em;
-    text-align: left;
-    color: white;
-    margin-bottom: 20px;
-}
+/*.tools{*/
+/*    background-color: black;*/
+/*    min-height: 540px;*/
+/*    position: relative;*/
+/*}*/
+/*.tools .position_bg{*/
+/*    width: 50%;*/
+/*    height: 540px;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*    background-image: url("../images/img_tools.jpg");*/
+/*    background-size: cover;*/
+/*    position: absolute;*/
+/*}*/
+/*.tools .item{*/
+/*    max-width: 514px;*/
+/*    }*/
+/*.tools .container{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    min-height: 540px;*/
+/*}*/
+/*.tools .item h4 {*/
+/*    font:  400 14px/20px 'Poppins', sans-serif;*/
+/*    letter-spacing: 2px;*/
+/*    text-align: left;*/
+/*    margin-bottom: 6px;*/
+/*    color: #C0C0C0;*/
+/*    text-transform: uppercase;*/
+/*}*/
+/*.tools .item h3{*/
+/*    font: 400 28px/32px 'Poppins', sans-serif;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    color: white;*/
+/*    margin-bottom: 14px;*/
+/*}*/
+/*.tools .item p{*/
+/*    font: 400 14px/20px 'Poppins', sans-serif;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    color: white;*/
+/*    margin-bottom: 20px;*/
+/*}*/
 
-.leafs {
-    background-image: url("../images/IMAGE_bcg_Leaves.jpg");
-    background-size: cover;
-    min-height: 600px;
-    position: relative;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
+/*.leafs {*/
+/*    background-image: url("../images/IMAGE_bcg_Leaves.jpg");*/
+/*    background-size: cover;*/
+/*    min-height: 600px;*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    justify-content: right;*/
+/*    align-items: center;*/
+/*}*/
 .past_clients {
     background-color: black;
     min-height: 500px;

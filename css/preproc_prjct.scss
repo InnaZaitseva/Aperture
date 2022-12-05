@@ -1,52 +1,41 @@
 $main_font:'Poppins', sans-serif;
 $main_color:#000000;
-$container: max-width 1200px;
-  //margin auto;
 
+
+$sunset_bcg: url("../images/IMAGE.jpg");
+$leafs_bcg: url("../images/IMAGE_bcg_Leaves.jpg");
+$star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
+
+@mixin container {
+  max-width:1200px;
+  margin: auto;
+}
+
+@mixin sub_container {
+  max-width: 298px;
+  margin-right: 62px;
+  h4{
+    font: 14px/20px 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;}
+  p{
+    font: 14px/20px 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #C0C0C0;
+  }
+}
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
     @content;
   }
 }
-
-.main_section {
-  background-image: url('../images/background_main.jpg');
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 71px;
-  box-sizing: border-box;
-  position: relative;
-  div{
-    max-width: 580px;
-    text-align: center;
-    color: #FFFFFF;
-    h2 {
-      font: 14px/20px 'Poppins', sans-serif;
-      text-align: center;
-      letter-spacing: 2px;
-      text-transform: uppercase;}
-    h1{
-      font: 54px/59px 'Poppins', sans-serif;
-      text-align: center;
-      color: #FFFFFF;}
-    p {
-      font: 14px/20px 'Poppins', sans-serif;
-      text-align: center;
-      color: #C0C0C0;}
-  }
-  .fixed_location{
-    position: absolute;
-    right: 40px;
-    bottom: 46px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    li {
-      font: 12px/12px 'Poppins', sans-serif;
+@mixin fixed_location {
+      font: 12px/12px $main_font;
       font-style: normal;
       font-weight: 400;
       color: #FFFFFF;
@@ -83,9 +72,49 @@ $container: max-width 1200px;
         }
       }
     }
+@mixin full_fix_location {
+  position: absolute;
+  right: 40px;
+  bottom: 46px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  li {
+    @include fixed_location;
   }
 }
 
+
+.main_section {
+  background-image: url('../images/background_main.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 71px;
+  box-sizing: border-box;
+  position: relative;
+  div{
+    max-width: 580px;
+    text-align: center;
+    color: #FFFFFF;
+    h2 {
+      font: 14px/20px $main_font;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;}
+    h1{
+      font: 54px/59px $main_font;
+      text-align: center;
+      color: #FFFFFF;}
+    p {
+      font: 14px/20px $main_font;
+      text-align: center;
+      color: #C0C0C0;}
+  }
+  ul {@include  full_fix_location }
+}
 
 .what_we_do {
   background-color: #000000;
@@ -96,7 +125,7 @@ $container: max-width 1200px;
     max-width: 1168px;
 
     h3 {
-      font: 40px/42px 'Poppins', sans-serif;
+      font: 40px/42px $main_font;
       font-weight: 400;
       letter-spacing: 0em;
       text-align: center;
@@ -105,7 +134,7 @@ $container: max-width 1200px;
     }
 
     h4 {
-      font: 23px/30px 'Poppins', sans-serif;
+      font: 23px/30px $main_font;
       font-weight: 400;
       letter-spacing: 0em;
       text-align: center;
@@ -118,7 +147,7 @@ $container: max-width 1200px;
       justify-content: space-between;
       align-items: center;
 
-      .flex-wrap {
+    .flex-wrap {
         flex-wrap: wrap;
         margin: auto;
 
@@ -178,91 +207,119 @@ $container: max-width 1200px;
 }
 
 .sunset{
-  background-image: url("../images/IMAGE.jpg");
+  background-image: $sunset_bcg;
   background-size: cover;
   min-height: 600px;
   position: relative;
   display: flex;
   justify-content: right;
   align-items: center;
-  .sub_container{
-    max-width: 298px;
-    margin-right: 62px;
-    h4{
-      font: 14px/20px 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #FFFFFF;}
-    p{
-      font: 14px/20px 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      color: #C0C0C0;
-    }
-  }
-  .fixed_location {
-    position: absolute;
-    right: 40px;
-    bottom: 46px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    li{
-      font: 12px/12px 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      color: #FFFFFF;
-      margin-left: 16px;
-      display: flex;
-      align-items: center;   }
-    &:before {
-      content: "";
-      display: inline-block;
-      background-image: url("../images/camera.svg");
-      width: 16px;
-      height: 16px;
-      margin-right: 6px; }
-    &:nth-child(2) {
-      &:before {
-        background-image: url("../images/time.svg"); }
-    }
-    &:nth-child(3){
-      &:before{
-        background-image: url("../images/iso.svg");
-        width:32px; }
-    }
-    &:last-of-type{
-      &:before{
-        background-image: url("../images/location_ice.svg");
-        width: 10px;}
-    }
-  }
+  div { @include sub_container; }
+  ul {@include  full_fix_location }
 }
 
-//.past_clients {
-//  background-color: black;
-//  min-height: 500px;
-//  box-sizing: border-box;
-//  padding-top: 113px;
-//  padding-bottom: 140px;
-//  h2{
-//    font: 40px/42px 'Poppins', sans-serif;
-//    font-style: normal;
-//    font-weight: 400;
-//    text-align: center;
-//    color: #FFFFFF;
-//    padding-bottom: 15px;
-//  }
-//  p{
-//    font: 24px/30px 'Poppins', sans-serif;
-//    font-style: normal;
-//    font-weight: 400;
-//    text-align: center;
-//    color: #C0C0C0;
-//    padding-bottom: 82px;
-//  }
+.tools{
+  background-color: black;
+  min-height: 540px;
+  position: relative;
+  .container {
+    display: flex;
+    align-items: center;
+    min-height: 540px;
+
+    .item {
+      max-width: 514px;
+
+      h4 {
+        font: 400 14px/20px 'Poppins', sans-serif;
+        letter-spacing: 2px;
+        text-align: left;
+        margin-bottom: 6px;
+        color: #C0C0C0;
+        text-transform: uppercase;}
+      h3{
+        font: 400 28px/32px 'Poppins', sans-serif;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        margin-bottom: 14px;}
+      p{
+        font: 400 14px/20px 'Poppins', sans-serif;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        margin-bottom: 20px;}
+      a {
+        font: 15px/20px 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        color: #000000;
+        height: 42px;
+        text-decoration: none;
+        align-items: center;
+        display: inline-flex;
+        background: #FFFFFF;
+        border-radius: 14px;
+        padding-right: 10px;
+      }
+    }
+  }
+  .position_bg{
+  width: 50%;
+  height: 540px;
+  right: 0;
+  top: 0;
+  background-image: url("../images/img_tools.jpg");
+  background-size: cover;
+  position: absolute;}
+  ul {@include  full_fix_location }
+}
+.leafs {
+  background-image: url("../images/IMAGE_bcg_Leaves.jpg");
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  div { @include sub_container; }
+  ul {@include  full_fix_location }
+}
+
+.past_clients {
+  background-color: black;
+  min-height: 500px;
+  box-sizing: border-box;
+  padding-top: 113px;
+  padding-bottom: 140px;
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+
+    h2 {
+      font: 40px/42px 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 15px;
+    }
+
+    p {
+      font: 24px/30px 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      color: #C0C0C0;
+      padding-bottom: 82px;
+    }
+  }
+  .d_flex owl-carousel{
+
+  }
+
 //}
 //
 //
@@ -270,4 +327,4 @@ $container: max-width 1200px;
 //  max-width: 128px;
 //  display: inline-block;
 //  align-items: center;
-//}
+}

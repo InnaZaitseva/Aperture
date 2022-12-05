@@ -13,46 +13,46 @@
     text-align: center;
     color: #FFFFFF; }
     .main_section div h2 {
-      font: 14px/20px 'Poppins', sans-serif;
+      font: 14px/20px "Poppins", sans-serif;
       text-align: center;
       letter-spacing: 2px;
       text-transform: uppercase; }
     .main_section div h1 {
-      font: 54px/59px 'Poppins', sans-serif;
+      font: 54px/59px "Poppins", sans-serif;
       text-align: center;
       color: #FFFFFF; }
     .main_section div p {
-      font: 14px/20px 'Poppins', sans-serif;
+      font: 14px/20px "Poppins", sans-serif;
       text-align: center;
       color: #C0C0C0; }
-  .main_section .fixed_location {
+  .main_section ul {
     position: absolute;
     right: 40px;
     bottom: 46px;
     list-style: none;
     display: flex;
     align-items: center; }
-    .main_section .fixed_location li {
-      font: 12px/12px 'Poppins', sans-serif;
+    .main_section ul li {
+      font: 12px/12px "Poppins", sans-serif;
       font-style: normal;
       font-weight: 400;
       color: #FFFFFF;
       margin-left: 16px;
       display: flex;
       align-items: center; }
-      .main_section .fixed_location li:before {
+      .main_section ul li:before {
         content: "";
         display: inline-block;
         background-image: url("../images/camera.svg");
         width: 16px;
         height: 16px;
         margin-right: 6px; }
-      .main_section .fixed_location li:nth-child(2):before {
+      .main_section ul li:nth-child(2):before {
         background-image: url("../images/time.svg"); }
-      .main_section .fixed_location li:nth-child(3):before {
+      .main_section ul li:nth-child(3):before {
         background-image: url("../images/iso.svg");
         width: 32px; }
-      .main_section .fixed_location li:last-of-type:before {
+      .main_section ul li:last-of-type:before {
         background-image: url("../images/location_ice.svg");
         width: 10px; }
 
@@ -63,14 +63,14 @@
   .what_we_do .container {
     max-width: 1168px; }
     .what_we_do .container h3 {
-      font: 40px/42px 'Poppins', sans-serif;
+      font: 40px/42px "Poppins", sans-serif;
       font-weight: 400;
       letter-spacing: 0em;
       text-align: center;
       color: #ffffff;
       margin-bottom: 15px; }
     .what_we_do .container h4 {
-      font: 23px/30px 'Poppins', sans-serif;
+      font: 23px/30px "Poppins", sans-serif;
       font-weight: 400;
       letter-spacing: 0em;
       text-align: center;
@@ -131,50 +131,209 @@
   display: flex;
   justify-content: right;
   align-items: center; }
-  .sunset .sub_container {
+  .sunset div {
     max-width: 298px;
     margin-right: 62px; }
-    .sunset .sub_container h4 {
+    .sunset div h4 {
       font: 14px/20px 'Poppins', sans-serif;
       font-style: normal;
       font-weight: 400;
       letter-spacing: 2px;
       text-transform: uppercase;
       color: #FFFFFF; }
-    .sunset .sub_container p {
+    .sunset div p {
       font: 14px/20px 'Poppins', sans-serif;
       font-style: normal;
       font-weight: 400;
       color: #C0C0C0; }
-  .sunset .fixed_location {
+  .sunset ul {
     position: absolute;
     right: 40px;
     bottom: 46px;
     list-style: none;
     display: flex;
     align-items: center; }
-    .sunset .fixed_location li {
-      font: 12px/12px 'Poppins', sans-serif;
+    .sunset ul li {
+      font: 12px/12px "Poppins", sans-serif;
       font-style: normal;
       font-weight: 400;
       color: #FFFFFF;
       margin-left: 16px;
       display: flex;
       align-items: center; }
-    .sunset .fixed_location:before {
-      content: "";
-      display: inline-block;
-      background-image: url("../images/camera.svg");
-      width: 16px;
-      height: 16px;
-      margin-right: 6px; }
-    .sunset .fixed_location:nth-child(2):before {
-      background-image: url("../images/time.svg"); }
-    .sunset .fixed_location:nth-child(3):before {
-      background-image: url("../images/iso.svg");
-      width: 32px; }
-    .sunset .fixed_location:last-of-type:before {
-      background-image: url("../images/location_ice.svg");
-      width: 10px; }
+      .sunset ul li:before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/camera.svg");
+        width: 16px;
+        height: 16px;
+        margin-right: 6px; }
+      .sunset ul li:nth-child(2):before {
+        background-image: url("../images/time.svg"); }
+      .sunset ul li:nth-child(3):before {
+        background-image: url("../images/iso.svg");
+        width: 32px; }
+      .sunset ul li:last-of-type:before {
+        background-image: url("../images/location_ice.svg");
+        width: 10px; }
+
+.tools {
+  background-color: black;
+  min-height: 540px;
+  position: relative; }
+  .tools .container {
+    display: flex;
+    align-items: center;
+    min-height: 540px; }
+    .tools .container .item {
+      max-width: 514px; }
+      .tools .container .item h4 {
+        font: 400 14px/20px 'Poppins', sans-serif;
+        letter-spacing: 2px;
+        text-align: left;
+        margin-bottom: 6px;
+        color: #C0C0C0;
+        text-transform: uppercase; }
+      .tools .container .item h3 {
+        font: 400 28px/32px 'Poppins', sans-serif;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        margin-bottom: 14px; }
+      .tools .container .item p {
+        font: 400 14px/20px 'Poppins', sans-serif;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        margin-bottom: 20px; }
+      .tools .container .item a {
+        font: 15px/20px 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        color: #000000;
+        height: 42px;
+        text-decoration: none;
+        align-items: center;
+        display: inline-flex;
+        background: #FFFFFF;
+        border-radius: 14px;
+        padding-right: 10px; }
+  .tools .position_bg {
+    width: 50%;
+    height: 540px;
+    right: 0;
+    top: 0;
+    background-image: url("../images/img_tools.jpg");
+    background-size: cover;
+    position: absolute; }
+  .tools ul {
+    position: absolute;
+    right: 40px;
+    bottom: 46px;
+    list-style: none;
+    display: flex;
+    align-items: center; }
+    .tools ul li {
+      font: 12px/12px "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #FFFFFF;
+      margin-left: 16px;
+      display: flex;
+      align-items: center; }
+      .tools ul li:before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/camera.svg");
+        width: 16px;
+        height: 16px;
+        margin-right: 6px; }
+      .tools ul li:nth-child(2):before {
+        background-image: url("../images/time.svg"); }
+      .tools ul li:nth-child(3):before {
+        background-image: url("../images/iso.svg");
+        width: 32px; }
+      .tools ul li:last-of-type:before {
+        background-image: url("../images/location_ice.svg");
+        width: 10px; }
+
+.leafs {
+  background-image: url("../images/IMAGE_bcg_Leaves.jpg");
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center; }
+  .leafs div {
+    max-width: 298px;
+    margin-right: 62px; }
+    .leafs div h4 {
+      font: 14px/20px 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF; }
+    .leafs div p {
+      font: 14px/20px 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #C0C0C0; }
+  .leafs ul {
+    position: absolute;
+    right: 40px;
+    bottom: 46px;
+    list-style: none;
+    display: flex;
+    align-items: center; }
+    .leafs ul li {
+      font: 12px/12px "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #FFFFFF;
+      margin-left: 16px;
+      display: flex;
+      align-items: center; }
+      .leafs ul li:before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/camera.svg");
+        width: 16px;
+        height: 16px;
+        margin-right: 6px; }
+      .leafs ul li:nth-child(2):before {
+        background-image: url("../images/time.svg"); }
+      .leafs ul li:nth-child(3):before {
+        background-image: url("../images/iso.svg");
+        width: 32px; }
+      .leafs ul li:last-of-type:before {
+        background-image: url("../images/location_ice.svg");
+        width: 10px; }
+
+.past_clients {
+  background-color: black;
+  min-height: 500px;
+  box-sizing: border-box;
+  padding-top: 113px;
+  padding-bottom: 140px; }
+  .past_clients .container {
+    max-width: 1200px;
+    margin: auto; }
+    .past_clients .container h2 {
+      font: 40px/42px 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 15px; }
+    .past_clients .container p {
+      font: 24px/30px 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      color: #C0C0C0;
+      padding-bottom: 82px; }
 
 /*# sourceMappingURL=preproc_prjct.css.map */

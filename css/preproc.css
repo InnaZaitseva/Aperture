@@ -1,21 +1,21 @@
 /*
 Error: Invalid CSS after "...ocation_ice.svg": expected "{", was "");"
-        on line 89 of preproc.scss
+        on line 92 of preproc.scss
 
-84:           width:32px;
-85:         }
-86:       }
-87:       &:last-of-type{
-88:         &:before{
-89:           background-image: url("../images/location_ice.svg");
-90:           width: 10px;
-91:         }
-92:       }
-93:     }
-94:   }
+87:           width:32px;
+88:         }
+89:       }
+90:       &:last-of-type{
+91:         &:before{
+92:           background-image: url("../images/location_ice.svg");
+93:           width: 10px;
+94:         }
+95:       }
+96:     }
+97:   }
 
 Backtrace:
-preproc.scss:89
+preproc.scss:92
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
@@ -51,4 +51,4 @@ C:/Ruby31-x64/bin/sass:32:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...ocation_ice.svg\": expected \"{\", was \"\");\"\A         on line 89 of preproc.scss\A \A 84:           width:32px;\A 85:         }\A 86:       }\A 87:       &:last-of-type{\A 88:         &:before{\A 89:           background-image: url(\"../images/location_ice.svg\");\A 90:           width: 10px;\A 91:         }\A 92:       }\A 93:     }\A 94:   }"; }
+  content: "Error: Invalid CSS after \"...ocation_ice.svg\": expected \"{\", was \"\");\"\A         on line 92 of preproc.scss\A \A 87:           width:32px;\A 88:         }\A 89:       }\A 90:       &:last-of-type{\A 91:         &:before{\A 92:           background-image: url(\"../images/location_ice.svg\");\A 93:           width: 10px;\A 94:         }\A 95:       }\A 96:     }\A 97:   }"; }
