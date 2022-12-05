@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAUE,WAAY;EACV,IAAI,EAAE,+BAAoB;EAC1B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,OAAO;EACnB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,kBACX",
-"sources": ["preproc.scss"],
+"mappings": "",
+"sources": [],
 "names": [],
 "file": "preproc.css"
 }
