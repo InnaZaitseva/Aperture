@@ -1,78 +1,111 @@
 $main_font:'Poppins', sans-serif;
 $main_color:#000000;
 
+$main_section_bcg: url('../images/background_main.jpg');
+$section1_bcg: url("../images/IMAGE.jpg");
+$section2_bcg: url("../images/IMAGE_bcg_Leaves.jpg");
+$section3_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
 
-$sunset_bcg: url("../images/IMAGE.jpg");
-$leafs_bcg: url("../images/IMAGE_bcg_Leaves.jpg");
-$star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: $main_color;
+}
+header{
+  padding: 24px 0;
+  background-color: $main_color;
+}
 
 @mixin container {
   max-width:1200px;
   margin: auto;
+}
+@mixin d_flex{
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
 }
 
 @mixin sub_container {
   max-width: 298px;
   margin-right: 62px;
   h4{
-    font: 14px/20px 'Poppins', sans-serif;
+    font: 14px/20px $main_font;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;}
   p{
-    font: 14px/20px 'Poppins', sans-serif;
+    font: 14px/20px $main_font;
     font-style: normal;
     font-weight: 400;
     color: #C0C0C0;
   }
 }
+@mixin navbar-item{
+  font-family: $main_font;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+@mixin cd-marker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 20%;
+  background-color: currentColor;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform: translateZ(0) rotateX(90deg);
+  -moz-transform: translateZ(0) rotateX(90deg);
+  -ms-transform: translateZ(0) rotateX(90deg);
+  -o-transform: translateZ(0) rotateX(90deg);
+  transform: translateZ(0) rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+  transition: transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s; }
 
-@mixin max-screen($res) {
-  @media screen and (max-width: $res) {
-    @content;
+//@mixin max-screen($res) {
+//  @media screen and (max-width: $res) {
+//    @content;
+//  }
+//}
+
+@mixin a_btn{
+  font: 16px/20px 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: #000000;
+  height: 42px;
+  text-decoration: none;
+  align-items: center;
+  display: inline-flex;
+  background: #FFFFFF;
+  border-radius: 14px;
+  padding-right: 10px;
+  &:before {
+    content: "";
+    display: inline-block;
+    background-color: black;
+    width: 32px;
+    height: 32px;
+    border-radius: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
+
 @mixin fixed_location {
-      font: 12px/12px $main_font;
-      font-style: normal;
-      font-weight: 400;
-      color: #FFFFFF;
-      margin-left: 16px;
-      display: flex;
-      align-items: center;
-
-      &:before {
-        content: "";
-        display: inline-block;
-        background-image: url("../images/camera.svg");
-        width: 16px;
-        height: 16px;
-        margin-right: 6px;
-      }
-
-      &:nth-child(2) {
-        &:before {
-          background-image: url("../images/time.svg");
-        }
-      }
-
-      &:nth-child(3) {
-        &:before {
-          background-image: url("../images/iso.svg");
-          width: 32px;
-        }
-      }
-
-      &:last-of-type {
-        &:before {
-          background-image: url("../images/location_ice.svg");
-          width: 10px;
-        }
-      }
-    }
-@mixin full_fix_location {
   position: absolute;
   right: 40px;
   bottom: 46px;
@@ -80,13 +113,58 @@ $star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
   display: flex;
   align-items: center;
   li {
-    @include fixed_location;
+    font: 12px/12px $main_font;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      background-image: url("../images/camera.svg");
+      width: 16px;
+      height: 16px;
+      margin-right: 6px;
+    }
+
+    &:nth-child(2) {
+      &:before {
+        background-image: url("../images/time.svg");
+      }
+    }
+
+    &:nth-child(3) {
+      &:before {
+        background-image: url("../images/iso.svg");
+        width: 32px;
+      }
+    }
+
+    &:last-of-type {
+      &:before {
+        background-image: url("../images/location_ice.svg");
+        width: 10px;
+      }
+    }
   }
 }
 
+@mixin general_sections {
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  div { @include sub_container }
+  ul {@include  fixed_location }
+}
 
 .main_section {
-  background-image: url('../images/background_main.jpg');
+  background-image: $main_section_bcg;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -113,7 +191,7 @@ $star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
       text-align: center;
       color: #C0C0C0;}
   }
-  ul {@include  full_fix_location }
+  ul {@include fixed_location }
 }
 
 .what_we_do {
@@ -123,6 +201,7 @@ $star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
 
   .container {
     max-width: 1168px;
+    margin: auto;
 
     h3 {
       font: 40px/42px $main_font;
@@ -142,16 +221,11 @@ $star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
       margin-bottom: 42px;
     }
 
-    .d_flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    div {@include d_flex;
+      flex-wrap: wrap;
+      margin: auto;
 
-    .flex-wrap {
-        flex-wrap: wrap;
-        margin: auto;
-
-        article {
+       article {
           max-width: 576px;
           position: relative;
           margin-bottom: 16px;
@@ -163,7 +237,7 @@ $star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
             padding-right: 30px;
 
             h4 {
-              font: 400 14px/20px 'Poppins', sans-serif;
+              font: 400 14px/20px $main_font;
               font-style: normal;
               letter-spacing: 2px;
               text-transform: uppercase;
@@ -173,53 +247,34 @@ $star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
             }
 
             p {
-              font: 400 14px/20px 'Poppins', sans-serif;
+              font: 400 14px/20px $main_font;
               font-style: normal;
               font-size: 14px;
               color: #C0C0C0;
               margin-bottom: 15px;
             }
 
-            a {
-              font: 15px/20px 'Poppins', sans-serif;
-              font-style: normal;
-              font-weight: 400;
-              letter-spacing: 0.4px;
-              color: #000000;
-              height: 42px;
-              text-decoration: none;
-              align-items: center;
-              display: inline-flex;
-              background: #FFFFFF;
-              border-radius: 14px;
-              padding-right: 10px;
-            }
+            a {@include a_btn}
           }
 
           img {
             width: 100%;
             display: block;
           }
-        }
-      }
+       }
     }
   }
 }
 
 .sunset{
-  background-image: $sunset_bcg;
-  background-size: cover;
-  min-height: 600px;
-  position: relative;
-  display: flex;
-  justify-content: right;
-  align-items: center;
+  @include general_sections;
+  background-image: $section1_bcg;
   div { @include sub_container; }
-  ul {@include  full_fix_location }
+  ul {@include fixed_location }
 }
 
 .tools{
-  background-color: black;
+  background-color: $main_color;
   min-height: 540px;
   position: relative;
   .container {
@@ -231,38 +286,25 @@ $star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
       max-width: 514px;
 
       h4 {
-        font: 400 14px/20px 'Poppins', sans-serif;
+        font: 400 14px/20px $main_font;
         letter-spacing: 2px;
         text-align: left;
         margin-bottom: 6px;
         color: #C0C0C0;
         text-transform: uppercase;}
       h3{
-        font: 400 28px/32px 'Poppins', sans-serif;
+        font: 400 28px/32px $main_font;
         letter-spacing: 0em;
         text-align: left;
         color: white;
         margin-bottom: 14px;}
       p{
-        font: 400 14px/20px 'Poppins', sans-serif;
+        font: 400 14px/20px $main_font;
         letter-spacing: 0em;
         text-align: left;
         color: white;
         margin-bottom: 20px;}
-      a {
-        font: 15px/20px 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0.4px;
-        color: #000000;
-        height: 42px;
-        text-decoration: none;
-        align-items: center;
-        display: inline-flex;
-        background: #FFFFFF;
-        border-radius: 14px;
-        padding-right: 10px;
-      }
+      a {@include a_btn}
     }
   }
   .position_bg{
@@ -273,33 +315,28 @@ $star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
   background-image: url("../images/img_tools.jpg");
   background-size: cover;
   position: absolute;}
-  ul {@include  full_fix_location }
+  ul {@include  fixed_location}
 }
-.leafs {
-  background-image: url("../images/IMAGE_bcg_Leaves.jpg");
-  background-size: cover;
-  min-height: 600px;
-  position: relative;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  div { @include sub_container; }
-  ul {@include  full_fix_location }
+
+.leafs{
+  @include general_sections;
+  background-image: $section2_bcg;
+  div { @include sub_container }
+  ul {@include  fixed_location }
 }
 
 .past_clients {
-  background-color: black;
+  background-color: $main_color;
   min-height: 500px;
   box-sizing: border-box;
   padding-top: 113px;
   padding-bottom: 140px;
 
   .container {
-    max-width: 1200px;
-    margin: auto;
+    @include container;
 
     h2 {
-      font: 40px/42px 'Poppins', sans-serif;
+      font: 40px/42px $main_font;
       font-style: normal;
       font-weight: 400;
       text-align: center;
@@ -308,7 +345,7 @@ $star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
     }
 
     p {
-      font: 24px/30px 'Poppins', sans-serif;
+      font: 24px/30px $main_font;
       font-style: normal;
       font-weight: 400;
       text-align: center;
@@ -316,15 +353,328 @@ $star_fall_bcg: url("../images/IMAGE_bcg_star_fall.jpg");
       padding-bottom: 82px;
     }
   }
-  .d_flex owl-carousel{
 
+  .owl-carousel {
+    @include d_flex;
+    justify-content: space-around;
+    a {
+    max-width: 128px;
+    display: inline-block;
+    align-items: center;
+    }
+    .owl-stage-outer{
+      .owl-stage{
+        display: flex;
+        align-items: center;
+        .owl-item{
+          text-align: center;
+        }
+      }
+    }
+    .owl-nav {
+      .owl-prev {
+        &:before {
+          font-weight: 900;
+          font-family: "Font Awesome 6 Free";
+          content: "\f053";
+          font-size: 30px;
+          color: white;
+          display: inline-block;
+          position: absolute;
+          left: 17px;
+          top: 23px;
+        }
+      }
+
+      .owl-next {
+        &:before {
+          font-weight: 900;
+          font-family: "Font Awesome 6 Free";
+          content: "\f054";
+          font-size: 30px;
+          color: white;
+          display: inline-block;
+          position: absolute;
+          right: 17px;
+          top: 23px;
+        }
+      }
+    }
+    //.owl-dots {
+    //  text-align: center;
+    //  .owl-dot span {
+    //    display: inline-block;
+    //    width: 10px;
+    //    height: 10px;
+    //    margin: 5px;
+    //    background-color: red;
+    //    border-radius: 50%;}
+    //  .active span {
+    //    background-color: #5397c7;
+    //  }
+    //}
   }
-
-//}
-//
-//
-//.past_clients a {
-//  max-width: 128px;
-//  display: inline-block;
-//  align-items: center;
 }
+
+.star_fall {
+  @include general_sections;
+  background-image: $section3_bcg;
+  div { @include sub_container }
+  ul {@include  fixed_location }
+}
+
+.help{
+  background-color: $main_color;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  padding-top: 113px;
+  padding-bottom: 108px;
+  div {
+    max-width: 571px;
+    margin: auto;
+
+    h2 {
+      font: 40px/42px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 15px;
+    }
+
+    p {
+      font: 24px/30px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      color: #C0C0C0;
+      padding-bottom: 82px;
+    }
+
+    a {
+      @include a_btn
+    }
+  }
+}
+
+
+.faq{
+  background-color: #181818;
+  padding: 70px 0;
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  .text {
+    max-width: 500px;
+    box-sizing: border-box;
+    padding-right: 50px;
+
+    h3 {
+      font: 41px/50px $main_font;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #C0C0C0;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font: 12px/12px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
+  }
+  .accordion {
+    max-width: 700px;
+
+    .ui-accordion-header {
+      background: #FFFFFF;
+      border: 1px solid #E3E8EF;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      padding: 23px 25px;
+      font: 18px/27px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #202939;
+      margin-bottom: 16px;
+
+      .ui-accordion-header.ui-state-active {
+        margin-bottom: 0;
+        border-radius: 8px 8px 0 0;
+
+        &:before {
+          transform: rotate(360deg);
+        }
+      }
+
+      .ui-icon {
+        background-image: none;
+        background-position: 0;
+        width: 32px;
+        height: 48px;
+        text-indent: 0;
+        position: absolute;
+        right: 25px;
+        top: 26px;
+
+        &:before {
+          font-weight: 900;
+          font-family: "Font Awesome 6 Free";
+          content: "\2b";
+          font-size: 32px;
+          display: inline-block;
+          transition: 0.5s;
+        }
+
+        .faq .ui-accordion .ui-accordion-header.ui-state-active .ui-icon:before {
+          transform: rotate(360deg);
+        }
+      }
+
+      .ui-accordion-content {
+        margin-bottom: 16px;
+        border-radius: 0 0 8px 8px;
+      }
+    }
+  }
+}
+.cd-header {
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  //&:after{
+  //  content: "";
+  //  display: table;
+  //  clear: both; }
+  div {
+    @include container;
+    @include d_flex;
+
+    .cd-3d-nav-trigger {
+      position: relative;
+      float: right;
+      height: 45px;
+      width: 45px;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      color: transparent;
+      display: none;
+    }
+
+    .cd-3d-nav-container {
+      .cd-3d-nav {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        .cd-selected {
+          margin-left: 25px;
+
+          .navbar_item {
+            @include navbar-item;
+            &::before {
+              top: 4.4em;
+              left: 50%;
+              right: auto;
+              -webkit-transform: translateX(-50%);
+              -moz-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+              -o-transform: translateX(-50%);
+              transform: translateX(-50%); }
+
+            &:first-of-type {
+              font-size: 13px;
+              margin-right: 56px;
+            }
+          }
+        }
+
+        .cd-selected {
+          margin-left: 25px;
+
+          .navbar_item {
+            @include navbar-item;
+
+            &:nth-child(2) {
+              font-size: 15px;
+            }
+          }
+
+          .navbar_item {
+            @include navbar-item;
+
+            &:nth-child(3) {
+              font-size: 15px;
+            }
+          }
+
+          .navbar_item {
+            @include navbar-item;
+
+            &:nth-child(4) {
+              font-size: 15px;
+            }
+          }
+
+          .nav_button {
+            font: 16px/20px 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            color: #000000;
+            text-decoration: none;
+            background: #FFFFFF;
+            border-radius: 14px;
+            padding: 9px 20px 13px 20px
+          }
+        }
+      }
+
+      .nav-is-visible {
+        -webkit-transform: translateY(80px);
+        -moz-transform: translateY(80px);
+        -ms-transform: translateY(80px);
+        -o-transform: translateY(80px);
+        transform: translateY(80px);
+
+        .cd-marker {
+          @include cd-marker;
+
+          .color-1 {
+            color: #9a57bd;
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: 3px;
+            left: 50%;
+            right: auto;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            height: 0;
+            width: 0;
+            border: 10px solid transparent;
+            border-bottom-color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+
