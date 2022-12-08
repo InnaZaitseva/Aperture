@@ -118,7 +118,7 @@ header {
             color: #C0C0C0;
             margin-bottom: 15px; }
           .what_we_do .container div article .description a {
-            font: 16px/20px 'Poppins', sans-serif;
+            font: 16px/20px "Poppins", sans-serif;
             font-style: normal;
             font-weight: 400;
             letter-spacing: 0.4px;
@@ -272,7 +272,7 @@ header {
         color: white;
         margin-bottom: 20px; }
       .tools .container .item a {
-        font: 16px/20px 'Poppins', sans-serif;
+        font: 16px/20px "Poppins", sans-serif;
         font-style: normal;
         font-weight: 400;
         letter-spacing: 0.4px;
@@ -613,7 +613,7 @@ header {
       color: #C0C0C0;
       padding-bottom: 82px; }
     .help div a {
-      font: 16px/20px 'Poppins', sans-serif;
+      font: 16px/20px "Poppins", sans-serif;
       font-style: normal;
       font-weight: 400;
       letter-spacing: 0.4px;
@@ -789,48 +789,203 @@ header {
           background: #FFFFFF;
           border-radius: 14px;
           padding: 9px 20px 13px 20px; }
-    .cd-header div .cd-3d-nav-container .nav-is-visible {
-      -webkit-transform: translateY(80px);
-      -moz-transform: translateY(80px);
-      -ms-transform: translateY(80px);
-      -o-transform: translateY(80px);
-      transform: translateY(80px); }
-      .cd-header div .cd-3d-nav-container .nav-is-visible .cd-marker {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 3px;
-        width: 20%;
-        background-color: currentColor;
-        -webkit-transform-origin: center bottom;
-        -moz-transform-origin: center bottom;
-        -ms-transform-origin: center bottom;
-        -o-transform-origin: center bottom;
-        transform-origin: center bottom;
-        -webkit-transform: translateZ(0) rotateX(90deg);
-        -moz-transform: translateZ(0) rotateX(90deg);
-        -ms-transform: translateZ(0) rotateX(90deg);
-        -o-transform: translateZ(0) rotateX(90deg);
-        transform: translateZ(0) rotateX(90deg);
-        -webkit-transition: -webkit-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
-        -moz-transition: -moz-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
-        transition: transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s; }
-        .cd-header div .cd-3d-nav-container .nav-is-visible .cd-marker .color-1 {
-          color: #9a57bd; }
-        .cd-header div .cd-3d-nav-container .nav-is-visible .cd-marker::before {
-          content: '';
-          position: absolute;
-          bottom: 3px;
-          left: 50%;
-          right: auto;
-          -webkit-transform: translateX(-50%);
-          -moz-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          -o-transform: translateX(-50%);
-          transform: translateX(-50%);
-          height: 0;
-          width: 0;
-          border: 10px solid transparent;
-          border-bottom-color: inherit; }
+  .cd-header::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .cd-header .nav-is-visible {
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    -o-transform: translateY(80px);
+    transform: translateY(80px); }
+    .cd-header .nav-is-visible .cd-marker {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 20%;
+      background-color: currentColor;
+      -webkit-transform-origin: center bottom;
+      -moz-transform-origin: center bottom;
+      -ms-transform-origin: center bottom;
+      -o-transform-origin: center bottom;
+      transform-origin: center bottom;
+      -webkit-transform: translateZ(0) rotateX(90deg);
+      -moz-transform: translateZ(0) rotateX(90deg);
+      -ms-transform: translateZ(0) rotateX(90deg);
+      -o-transform: translateZ(0) rotateX(90deg);
+      transform: translateZ(0) rotateX(90deg);
+      -webkit-transition: -webkit-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+      -moz-transition: -moz-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+      transition: transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s; }
+      .cd-header .nav-is-visible .cd-marker .color-1 {
+        color: #9a57bd; }
+      .cd-header .nav-is-visible .cd-marker .color-2 {
+        color: #c96aa4; }
+      .cd-header .nav-is-visible .cd-marker .color-3 {
+        color: #d6915e; }
+      .cd-header .nav-is-visible .cd-marker .color-4 {
+        color: #5397c7; }
+      .cd-header .nav-is-visible .cd-marker .color-5 {
+        color: #77cd91; }
+    .cd-header .nav-is-visible::before {
+      content: '';
+      position: absolute;
+      bottom: 3px;
+      left: 50%;
+      right: auto;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      height: 0;
+      width: 0;
+      border: 10px solid transparent;
+      border-bottom-color: inherit; }
+
+/* ---Main Components ---- */
+/*.cd-header {*/
+/*    -webkit-transition: -webkit-transform 0.5s;*/
+/*    -moz-transition: -moz-transform 0.5s;*/
+/*    transition: transform 0.5s;*/
+/*    !* Force Hardware Acceleration in WebKit *!*/
+/*    -webkit-transform: translateZ(0);*/
+/*    -moz-transform: translateZ(0);*/
+/*    -ms-transform: translateZ(0);*/
+/*    -o-transform: translateZ(0);*/
+/*    transform: translateZ(0);*/
+/*    -webkit-backface-visibility: hidden;*/
+/*    backface-visibility: hidden; }*/
+/*.cd-header:after {*/
+/*    content: "";*/
+/*    display: table;*/
+/*    clear: both; }*/
+.cd-header.nav-is-visible {
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  -o-transform: translateY(80px);
+  transform: translateY(80px); }
+
+/*@media only screen and (min-width: 768px) {*/
+.cd-header.nav-is-visible {
+  -webkit-transform: translateY(170px);
+  -moz-transform: translateY(170px);
+  -ms-transform: translateY(170px);
+  -o-transform: translateY(170px);
+  transform: translateY(170px); }
+
+/*.cd-3d-nav-trigger {*/
+/*    display: none;*/
+/*    }*/
+/*.cd-3d-nav{  !*ul-class*!*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+/*header nav li{*/
+/*    margin-left: 25px;*/
+/*}*/
+/*header li .navbar_item:first-of-type a{*/
+/*    font-size: 13px;*/
+/*    margin-right: 56px;*/
+/*}*/
+/*header li .navbar_item:nth-child(2),.navbar_item:nth-child (3), .navbar_item:nth-child (4) a{*/
+/*    font-size: 15px;*/
+/*}*/
+/*.cd-3d-nav a {*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    line-height: 20px;*/
+/*    color: #FFFFFF;*/
+/*    text-decoration: none;*/
+/*}*/
+/*.cd-3d-nav .nav_button  {*/
+/*    font: 16px/20px 'Poppins', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    color: #000000;*/
+/*    text-decoration: none;*/
+/*    background: #FFFFFF;*/
+/*    border-radius: 14px;*/
+/*    padding: 9px 20px 13px 20px*/
+/*}*/
+/*.cd-3d-nav a::before {*/
+/*        top: 4.4em;*/
+/*        left: 50%;*/
+/*        right: auto;*/
+/*        -webkit-transform: translateX(-50%);*/
+/*        -moz-transform: translateX(-50%);*/
+/*        -ms-transform: translateX(-50%);*/
+/*        -o-transform: translateX(-50%);*/
+/*        transform: translateX(-50%); }*/
+/*.cd-3d-nav-trigger {*/
+/*    position: relative;*/
+/*    float: right;*/
+/*    height: 45px;*/
+/*    width: 45px;*/
+/*    overflow: hidden;*/
+/*    text-indent: 100%;*/
+/*    white-space: nowrap;*/
+/*    color: transparent;*/
+/*    display: none;*/
+/*}*/
+/*.cd-marker {*/
+/* line at the bottom of nav selected item */
+/*position: absolute;*/
+/*bottom: 0;*/
+/*left: 0;*/
+/*height: 3px;*/
+/*width: 20%;*/
+/*background-color: currentColor;*/
+/*-webkit-transform-origin: center bottom;*/
+/*-moz-transform-origin: center bottom;*/
+/*-ms-transform-origin: center bottom;*/
+/*-o-transform-origin: center bottom;*/
+/*transform-origin: center bottom;*/
+/*-webkit-transform: translateZ(0) rotateX(90deg);*/
+/*-moz-transform: translateZ(0) rotateX(90deg);*/
+/*-ms-transform: translateZ(0) rotateX(90deg);*/
+/*-o-transform: translateZ(0) rotateX(90deg);*/
+/*transform: translateZ(0) rotateX(90deg);*/
+/*-webkit-transition: -webkit-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;*/
+/*-moz-transition: -moz-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;*/
+/*transition: transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s; }*/
+/*.cd-marker::before {*/
+/* triangle at the bottom of nav selected item */
+/*content: '';*/
+/*position: absolute;*/
+/*bottom: 3px;*/
+/*left: 50%;*/
+/*right: auto;*/
+/*-webkit-transform: translateX(-50%);*/
+/*-moz-transform: translateX(-50%);*/
+/*-ms-transform: translateX(-50%);*/
+/*-o-transform: translateX(-50%);*/
+/*transform: translateX(-50%);*/
+/*height: 0;*/
+/*width: 0;*/
+/*border: 10px solid transparent;*/
+/*border-bottom-color: inherit; }*/
+/*.nav-is-visible .cd-marker {*/
+/*    -webkit-transform: translateZ(0);*/
+/*    -moz-transform: translateZ(0);*/
+/*    -ms-transform: translateZ(0);*/
+/*    -o-transform: translateZ(0);*/
+/*    transform: translateZ(0); }*/
+/* these are the colors of the markers - line + arrow */
+/*.color-1 {*/
+/*    color: #9a57bd; }*/
+/*.color-2 {*/
+/*    color: #c96aa4; }*/
+/*.color-3 {*/
+/*    color: #d6915e; }*/
+/*.color-4 {*/
+/*    color: #5397c7; }*/
+/*.color-5 {*/
+/*    color: #77cd91; }*/
 
 /*# sourceMappingURL=preproc_prjct.css.map */
